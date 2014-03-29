@@ -612,3 +612,19 @@ label:empty {
 	.descrip > .narrow-control - affects control label
 	.descrip > .wide-control - affects input
 */
+@media all {
+  .background > .content-area {
+    background-color: #ff8247;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+@media all {
+  .bg {
+    background-color: #a5ecd0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}

@@ -85,6 +85,10 @@
         {
          activate_page("#frontpage"); 
         });
+        $(".uib_w_11").click(function(evt)
+        {
+         activate_page("#HotWings"); 
+        });
 }
  $(document).ready(register_event_handlers);
 })();

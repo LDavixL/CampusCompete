@@ -33,8 +33,8 @@
 		<script>
 			function submit(event)
 			            {
-			              alert("User: "+(document.loginform.login.value));
-			              alert("Pass: "+(document.loginform.password.value));
+			              alert("Username: "+(document.loginform.login.value));
+			              alert("Password: "+(document.loginform.password.value));
 			                
 			            var txtFile = new XMLHttpRequest();
 			            var allText;
@@ -71,7 +71,7 @@
 		<!-- <a href="next.html">aaa</a>
 		<!-- content goes here-->
 		<div class="uwrap">
-			<div class="upage" id="mainpage">
+			<div class="upage bg" id="mainpage">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_1" data-uib="layout/header" data-ver="0">
 						<h2>Campus Compete</h2>
@@ -82,19 +82,19 @@
 					<div class="upage-content" id="mainsub">
 						<div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
 							<div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+								<div class="widget-container content-area vertical-col left">
 
 									<form name="loginform" action="javascript:submit()" onsubmit="return submit()">
 										<div class="table-thing widget uib_w_2 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
-											<label class="narrow-control label-inline">User</label>
+											<label class="narrow-control label-inline">Username:</label>
 											<input class="wide-control form-control" name="login" type="text" placeholder="JSmith">
 										</div>
 										<div class="table-thing widget uib_w_3 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
-											<label class="narrow-control label-inline">Pass</label>
+											<label class="narrow-control label-inline">Password:</label>
 											<input class="wide-control form-control" name="password" type="password" placeholder="**********">
 										</div>
 										<div class="btn-group uib-bs-flex widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="0">
-											<button type="button" class="btn widget uib_w_5 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Submit</button>
+											<button type="button" class="btn widget uib_w_5 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Log In</button>
 											<button type="button" class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Sign Up</button>
 										</div>
 									</form>
@@ -165,19 +165,20 @@
 								<div class="widget-container content-area vertical-col">
 
 									<div class="list-group widget uib_w_23 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="0">
-										<a class="list-group-item allow-badge widget uib_w_24" data-uib="twitter%20bootstrap/list_item" data-ver="0">
-											<h4 class="list-group-item-heading">Heading</h4>
-											<p class="list-group-item-text">List item</p>
-										</a>
-										<a class="list-group-item allow-badge widget uib_w_25" data-uib="twitter%20bootstrap/list_item" data-ver="0">
-											<h4 class="list-group-item-heading">Heading</h4>
-											<p class="list-group-item-text">List item</p>
-										</a>
-										<a class="list-group-item allow-badge widget uib_w_26" data-uib="twitter%20bootstrap/list_item" data-ver="0">
-											<h4 class="list-group-item-heading">Heading</h4>
-											<p class="list-group-item-text">List item</p>
-										</a>
-									</div><span class="uib_shim"></span>
+										<a class="list-group-item allow-badge widget uib_w_24" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest Backwards Bowling Score</h4><p class="list-group-item-text">Davix</p></a>
+										<a class="list-group-item allow-badge widget uib_w_25" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest High Five</h4><p class="list-group-item-text">Shane </p></a>
+										<a class="list-group-item allow-badge widget uib_w_26" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Most People Seated On A Chair At Once</h4><p class="list-group-item-text">CoRE</p></a><a class="list-group-item allow-badge widget uib_w_36 d-margins"
+										data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Fast Completition of a 100-Piece Jigsaw Puzzle</h4><p class="list-group-item-text">Chaoren</p></a><a class="list-group-item allow-badge widget uib_w_37 d-margins"
+										data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest "Flappy Bird" Score</h4><p class="list-group-item-text">Chaoren</p></a><a class="list-group-item allow-badge widget uib_w_38 d-margins" data-uib="twitter%20bootstrap/list_item"
+										data-ver="0"><h4 class="list-group-item-heading">Most Times Writting "CoRE" in 20 Seconds</h4><p class="list-group-item-text">Justin</p></a><a class="list-group-item allow-badge widget uib_w_39 d-margins" data-uib="twitter%20bootstrap/list_item"
+										data-ver="0"><h4 class="list-group-item-heading">Most People in a Selfie</h4><p class="list-group-item-text">Some Sorority</p></a>
+										<a class="list-group-item allow-badge widget uib_w_40 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="0">
+											<h4 class="list-group-item-heading">Largest Deformed M&amp;M Piece</h4>
+											<p class="list-group-item-text">Bryan</p>
+										</a><a class="list-group-item allow-badge widget uib_w_41 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Most T-Shirts Wore In 1 Minute</h4><p class="list-group-item-text">Alex</p></a><a class="list-group-item allow-badge widget uib_w_42 d-margins"
+										data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest Tetris Score</h4><p class="list-group-item-text">Lily</p></a>
+									</div>
+									<span class="uib_shim"></span>
 								</div>
 							</div>
 							<span class="uib_shim"></span>
@@ -193,25 +194,25 @@
 								<h4 class="modal-title">Create Challenge</h4>
 							</div>
 
-                            <form name="newchal">
-							<div class="modal-body">
-								<div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
-									<div class="widget-container content-area vertical-col">
+							<form name="newchal">
+								<div class="modal-body">
+									<div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+										<div class="widget-container content-area vertical-col">
 
-										<div class="table-thing widget uib_w_32 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
-											<label class="narrow-control label-top-left">Title of Challenge</label>
-											<input name="title" class="wide-control form-control" type="text" value="" placeholder="Awesome Challenge">
+											<div class="table-thing widget uib_w_32 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+												<label class="narrow-control label-top-left">Title of Challenge</label>
+												<input name="title" class="wide-control form-control" type="text" value="" placeholder="Awesome Challenge">
+											</div>
+											<div class="table-thing widget uib_w_33 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+												<label class="narrow-control label-top-left">Description of Challenge</label>
+												<input name="disc" class="wide-control form-control" type="text" value="" placeholder="What you have to do is...">
+											</div>
+											<button type="button" class="btn widget uib_w_34 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Submit</button>
+											<span class="uib_shim"></span>
 										</div>
-										<div class="table-thing widget uib_w_33 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
-											<label class="narrow-control label-top-left">Description of Challenge</label>
-											<input name="disc" class="wide-control form-control" type="text" value="" placeholder="What you have to do is...">
-										</div>
-										<button type="button" class="btn widget uib_w_34 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Submit</button>
-										<span class="uib_shim"></span>
 									</div>
 								</div>
-							</div>
-                            </form>
+							</form>
 							<div class="modal-footer"></div>
 						</div>
 					</div>
@@ -234,7 +235,7 @@
 								<div class="widget-container content-area vertical-col">
 
 									<span class="widget uib_w_9 d-margins badge" data-uib="twitter%20bootstrap/badge_and_label" data-ver="0">Greetings</span>
-									<div class="list-group widget uib_w_10 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="0"><a class="list-group-item allow-badge widget uib_w_11" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Hot Wing Challenge</h4><p class="list-group-item-text">Eat 10 Hot Wings as Fast as Possible</p></a>
+									<div class="list-group widget uib_w_10 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="0"><a class="list-group-item allow-badge widget uib_w_11" data-uib="twitter%20bootstrap/list_item" data-ver="0"><span class="badge glyphicon glyphicon-arrow-up"></span><h4 class="list-group-item-heading">Hot Wing Challenge</h4><p class="list-group-item-text">Eat 10 Hot Wings as Fast as Possible</p></a>
 										<a class="list-group-item allow-badge widget uib_w_12" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Brain Run</h4><p class="list-group-item-text">Fastest Lap around the Brain</p></a>
 										<a class="list-group-item allow-badge widget uib_w_13" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Center Court Baskets </h4><p class="list-group-item-text">Most Center Court Baskets in a Row</p></a>
 									</div>
