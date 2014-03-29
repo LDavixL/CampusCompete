@@ -34,19 +34,12 @@
             }
             txtFile.send(null);
         });
-        $(".uib_w_7").click(function(evt)
-        {
-        /* your code goes here */ 
-            //Signup
-        });
+        
         $(".uib_w_5").click(function(evt)
         {
          activate_page("#frontpage"); 
         });
-        $(".uib_w_7").click(function(evt)
-        {
-         activate_page("#frontpage"); 
-        });
+        
         $(".uib_w_21").click(function(evt)
         {
          activate_page("#listpage"); 
@@ -89,30 +82,44 @@
         {
          activate_page("#HotWings"); 
         });
+        
+        
+        $(".uib_w_46").click(function(evt)
+        {
+        /* your code goes here */ 
+        });
+        $(".uib_w_7").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+        // $("#popupsignup").modal("toggle");  
+        });
+        
+        
+        $("#signupfrontpage").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#popupsignup").modal("toggle");  
+        });
+        $("#submitsign").click(function(evt)
+        {
+        /* your code goes here */ 
+            saveuser();
+            $("#popupsignup").modal("toggle");  
+        });
 }
  $(document).ready(register_event_handlers);
 })();
 
-function loadDoc() {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "read-save.jsp", true);
-        xmlhttp.send();
-    }
-function WriteToFile()
-{
-  try 
-  {
-    var fso, s;
-    fso = new ActiveXObject("Scripting.FileSystemObject");
-    s = fso.CreateTextFile("https://raw.githubusercontent.com/LDavixL/CampusCompete/master/test.txt", true);
-    s.writeline("This is a test");
-    s.Close();
-  } 
-  catch(err)
-  {
-   var strErr = 'Error:';
-   strErr += '\nNumber:' + err.number;
-   strErr += '\nDescription:' + err.description;
-   document.write(strErr);
-  }
-}
+function saveuser(){
+                var username = document.savemem.possuser.value;
+                var password = document.savemem.posspass.value;
+                
+                 var myRequest = new Request({method: 'get', url: 'saveuser.php'});
+                 myRequest.send('user=' + username + 'password=' + password);
+			};

@@ -30,40 +30,103 @@
 		<script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 		<script type="application/javascript" src="js/index_user_scripts.js"></script>
 		<script type="application/javascript" src="js/bs_subpage.js"></script>
+		<script type="application/javascript" src="js/mootools-core-1.4.5-full-nocompat.js"></script>
 		<script>
-			function submit(event)
-			            {
-			              alert("Username: "+(document.loginform.login.value));
-			              alert("Password: "+(document.loginform.password.value));
-			                
-			            var txtFile = new XMLHttpRequest();
-			            var allText;
-			            var lines;
-			            
-			            txtFile.open("GET", "https://raw.githubusercontent.com/LDavixL/CampusCompete/master/test.txt", true);
-			            txtFile.onreadystatechange = function() {
+			
+			 
+			function submit(event){
+			        alert("User: "+(document.loginform.login.value));
+			        alert("Pass: "+(document.loginform.password.value));
+			       
+			        var userpass = document.loginform.login.value + document.loginform.password.value;                             
+			        var txtFile = new XMLHttpRequest();
+			        var allText;
+			        var lines;
+			                                   
+			        txtFile.open("GET", "https://raw.githubusercontent.com/LDavixL/CampusCompete/master/test.txt", true);
+			        txtFile.onreadystatechange = function() {
 			                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-			                    if (txtFile.status === 200) {  // Makes sure it's found the file.
-			                        allText = txtFile.responseText; 
-			                        lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-			                        var temp = "";
-			                        var tog = false;
-			                        
-			                    }
+			                if (txtFile.status === 200) {  // Makes sure it's found the file.
+			                        allText = txtFile.responseText;
+			                        lines = txtFile.responseText.split("\n"); // Will separate each line into an array                       
+			                        }
 			                }
-			            lines.forEach(function(entry) {
-			                                temp+=entry+ " ";
-			                                tog = !tog;
-			                                if(!tog){
-			                                    alert(temp);
-			                                    temp = "";
-			                                }
-			                        });
-			                
-			                
-			            return false;  
-			            };
+                    };
+			        lines.forEach(function(entry){
+			                if(!(entry.localeCompare(userpass)))
+			                return true;
+			        });
+			        return false;
+			};
+			 
+			function members(first, second, third, fourth, fifth)
+			{
+			        this.first = first;
+			        this.second = second;
+			        this.third = third;
+			        this.fourth = fourth;
+			        this.fifth = fifth;
+			};
+			 
+			function challenge(title,disc,url,members)
+			{
+			        this.title = title;
+			        this.disc = disc;
+			        this.url = url;
+			        this.members = members;
+			};
+			 
+			function getchallengename()
+			{
+			        var txtFile = new XMLHttpRequest();
+			        var allText;
+			        var lines;
+			                                   
+			        txtFile.open("GET", "https://raw.githubusercontent.com/LDavixL/CampusCompete/master/challenges.txt", true);
+			        txtFile.onreadystatechange = function() {
+			                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+			                if (txtFile.status === 200) {  // Makes sure it's found the file.
+			                        allText = txtFile.responseText;
+			                        lines = txtFile.responseText.split("\n"); // Will separate each line into an array                       
+			                        }
+			                }
+                    };
+			        var t1;
+			        var t2;
+			        var tog = false;
+			        var challenges;
+			        lines.forEach(function(entry){ 
+			                if(!tog)       
+			                {
+			                        t1 = entry;
+			                }
+			                else
+			                {
+			                        t2 = entry;
+			 
+			                        var esp = (entry.split("@"));
+			                        var a = esp[0];
+			                        var b = esp[1];
+			                        var c = esp[2];
+			                       
+			                        var d = esp[3].split(",");
+			                        var d1 = d[0];
+			                        var d2 = d[1];
+			                        var d3 = d[2];
+			                        var d4 = d[3];
+			                        var d5 = d[4];
+			                       
+			                        var mem = new members(d1,d2,d3,d4,d5);
+			 
+			                        var chall = new challenge(a,b,c,mem);
+			                        challenges.add(chall); 
+			                }      
+			                tog = !tog;
+			        });
+			        return false;
+			};
 		</script>
+
 		<script type="application/javascript" src="modal/js/modal.js"></script>
 	</head>
 
@@ -95,9 +158,12 @@
 										</div>
 										<div class="btn-group uib-bs-flex widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="0">
 											<button type="button" class="btn widget uib_w_5 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Log In</button>
-											<button type="button" class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Sign Up</button>
+                                            
+									   </form>
+                                        <form name="signupbutton">
+											<button name="button" type="button" class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="signupfrontpage"><i class="glyphicon button-icon-left" data-position="left"></i>Sign Up</button>       
+                                        </form>
 										</div>
-									</form>
 									<span class="uib_shim"></span>
 								</div>
 							</div>
@@ -109,6 +175,38 @@
 				</div>
 				<!-- /upage-outer -->
 
+				<div class="modal outer-element uib_w_43" data-uib="twitter%20bootstrap/modal" data-ver="0" data-backdrop="true" id="popupsignup">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title">Sign up for CampusCompete</h4>
+							</div>
+
+							<div class="modal-body">
+								<div class="col uib_col_8 single-col" data-uib="layout/col" data-ver="0">
+									<div class="widget-container content-area vertical-col">
+
+										<form name="savemem" action="javascript:saveuser()" onsubmit="return saveuser()">
+											<div class="table-thing widget uib_w_44 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+												<label class="narrow-control label-inline">Username</label>
+												<input name="possuser" value="" class="wide-control form-control" type="text" placeholder="JSmith">
+											</div>
+											<div class="table-thing widget uib_w_45 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+												<label class="narrow-control label-inline">Password</label>
+												<input name="posspass" value="" class="wide-control form-control" type="password" placeholder="********">
+											</div>
+											<button name="submittofile" type="button" class="btn widget uib_w_46 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="submitsign"><i class="glyphicon button-icon-left" data-position="left"></i>Sign Up!</button>
+											<span class="uib_shim"></span>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="upage hidden" id="HotWings">
 				<div class="upage-outer">
@@ -207,7 +305,7 @@
 												<label class="narrow-control label-top-left">Description of Challenge</label>
 												<input name="disc" class="wide-control form-control" type="text" value="" placeholder="What you have to do is...">
 											</div>
-											<button type="button" class="btn widget uib_w_34 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Submit</button>
+											<button type="button" class="btn widget uib_w_34 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="submitchallenge"><i class="glyphicon button-icon-left" data-position="left"></i>Submit</button>
 											<span class="uib_shim"></span>
 										</div>
 									</div>

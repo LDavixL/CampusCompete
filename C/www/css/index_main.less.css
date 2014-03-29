@@ -394,7 +394,6 @@ label:empty {
 @media all {
   .d-margins {
     margin-top: 5px;
-    margin-bottom: 6px;
   }
   .wrapping-col > .d-margins {
     margin-left: 3px;
