@@ -1,9 +1,9 @@
 (function(){
- var rand_id="525899994";
+ var rand_id="1181746579";
  var appName = "";  //Name of your app
  var relName = "4.0.0";  //Rel of your app
  var isMobiusSite = false;
- var appUrl = "https://am-xdk2.s3.amazonaws.com/cust.68abffea-da97-427b-9045-fc343472fc08/app.e3a52a18-84da-4a41-8f01-f65739db9b7b/70750df8-1439-4e84-a115-515e201a17b5/PRODUCTION/yoursite/index.html";
+ var appUrl = "https://am-xdk2.s3.amazonaws.com/cust.68abffea-da97-427b-9045-fc343472fc08/app.58bae3fb-7080-43cb-adfd-90ee89002fa2/0ee28010-b0f2-4924-a169-3a774e7b946f/PRODUCTION/yoursite/index.html";
  var appImageUrl = ""; //launcher icon link
  var isMobius = true; //set to false if it's not mobius app
  var autoLaunch = true;
