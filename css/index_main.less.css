@@ -801,7 +801,7 @@ label:empty {
 @media all {
   .text > label {
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
   }
 }
 @media all {
@@ -810,7 +810,7 @@ label:empty {
 @media all {
   .text1 > label {
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
   }
 }
 @media all {
