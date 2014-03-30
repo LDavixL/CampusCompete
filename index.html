@@ -32,8 +32,6 @@
 		<script type="application/javascript" src="js/bs_subpage.js"></script>
 		<script type="application/javascript" src="js/mootools-core-1.4.5-full-nocompat.js"></script>
 		<script>
-			
-			 
 			function submit(event){
 			        alert("User: "+(document.loginform.login.value));
 			        alert("Pass: "+(document.loginform.password.value));
@@ -158,12 +156,12 @@
 										</div>
 										<div class="btn-group uib-bs-flex widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="0">
 											<button type="button" class="btn widget uib_w_5 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Log In</button>
-                                            
-									   </form>
-                                        <form name="signupbutton">
-											<button name="button" type="button" class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="signupfrontpage"><i class="glyphicon button-icon-left" data-position="left"></i>Sign Up</button>       
-                                        </form>
+
+											<button name="button" type="button" class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="signupfrontpage"><i class="glyphicon button-icon-left" data-position="left"></i>Sign Up</button>
+
 										</div>
+									</form>
+
 									<span class="uib_shim"></span>
 								</div>
 							</div>
@@ -208,6 +206,219 @@
 					</div>
 				</div>
 			</div>
+			<div class="upage hidden" id="Puzzle">
+				<div class="upage-outer">
+					<div class="uib-header header-bg container-group inner-element uib_w_67 uib-header-fixed descrip" data-uib="layout/header" data-ver="0" id="headpuz">
+						<h2>__  Fastest Puzzle Completion</h2>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left">
+							<button type="button" class="btn widget uib_w_76 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="backpuz"><i class="glyphicon button-icon-left" data-position="left"></i>Back</button>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"></div>
+					</div>
+					<div id="Puzzlesub" class="upage-content ">
+
+						<div class="grid grid-pad urow uib_row_11 row-height-11" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_17 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+
+									<div class="widget uib_w_71 scale-image d-margins" data-uib="media/img" data-ver="0">
+										<figure class="figure-align">
+											<img src="puzzle.JPG">
+											<figcaption data-position="bottom"></figcaption>
+										</figure>
+									</div>
+									<span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+
+						<div class="grid grid-pad urow uib_row_12 row-height-12" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_18 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+									<div class="table-thing widget uib_w_72 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="0">
+										<label class="narrow-control"></label>
+										<textarea rows="2" class="wide-control form-control" placeholder="Placeholder">Fastest time to finish this specific map puzzle with all 100 pcs complete.</textarea>
+									</div>
+									<button type="button" class="btn widget uib_w_73 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="Pz -subentpre"><i class="glyphicon button-icon-left" data-position="left"></i>Submit Entry</button><span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+					</div>
+				</div>
+				<!-- /upage-outer -->
+				<div class="modal outer-element uib_w_68" data-uib="twitter%20bootstrap/modal" data-ver="0" id="Pz-popout" data-backdrop="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title">Fastest 100pc Puzzle Solve</h4>
+							</div>
+
+							<div class="modal-body">
+								<div class="col uib_col_16 single-col" data-uib="layout/col" data-ver="0">
+									<div class="widget-container content-area vertical-col">
+
+										<div class="table-thing widget uib_w_69 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+											<label class="narrow-control label-inline">Time</label>
+											<input class="wide-control form-control" type="text" placeholder="0:00">
+										</div>
+										<button type="button" class="btn widget uib_w_70 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="timesubmit"><i class="glyphicon button-icon-left" data-position="left"></i>Submit Time</button>
+										<span class="uib_shim"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="upage hidden" id="HighestHighFive">
+				<div class="upage-outer">
+					<div class="uib-header header-bg container-group inner-element uib_w_60 uib-header-fixed" data-uib="layout/header" data-ver="0">
+						<h2>Highest High Five</h2>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left">
+							<button type="button" class="btn widget uib_w_75 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="Back-HHF"><i class="glyphicon button-icon-left" data-position="left"></i>Back</button>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"></div>
+					</div>
+					<div id="HighestHighFivesub" class="upage-content ">
+
+						<div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_13 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+
+									<div class="widget uib_w_64 d-margins heightscal skin margskin" data-uib="media/img" data-ver="0">
+										<figure class="figure-align">
+											<img src="highfive.jpg">
+											<figcaption data-position="bottom"></figcaption>
+										</figure>
+									</div>
+
+									<span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+
+						<div class="grid grid-pad urow uib_row_10 row-height-10" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_15 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+									<div class="table-thing widget uib_w_66 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="0">
+										<label class="narrow-control"></label>
+										<textarea rows="2" class="wide-control form-control" placeholder="Placeholder">Must get the heighest high five, bodies do not have to be off the ground.</textarea>
+									</div>
+									<button type="button" class="btn widget uib_w_65 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="subenty"><i class="glyphicon button-icon-left" data-position="left"></i>Submit Entry</button><span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+					</div>
+				</div>
+				<!-- /upage-outer -->
+				<div class="modal outer-element uib_w_61" data-uib="twitter%20bootstrap/modal" data-ver="0" id="HHF-subpop" data-backdrop="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title">Highest High Five </h4>
+							</div>
+
+							<div class="modal-body">
+								<div class="col uib_col_12 single-col" data-uib="layout/col" data-ver="0">
+									<div class="widget-container content-area vertical-col left">
+
+										<div class="table-thing widget uib_w_62 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+											<label class="narrow-control label-inline">Height</label>
+											<input class="wide-control form-control" type="text" placeholder="5' 1''">
+										</div>
+										<button type="button" class="btn widget uib_w_63 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="hhf-subentfin"><i class="glyphicon button-icon-left" data-position="left"></i>Submit Entry</button>
+										<span class="uib_shim"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="upage hidden" id="Bowling">
+				<div class="upage-outer">
+					<div class="uib-header header-bg container-group inner-element uib_w_53 uib-header-fixed" data-uib="layout/header" data-ver="0">
+						<h2>Backwards Bowling</h2>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left">
+							<button type="button" class="btn widget uib_w_74 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="Back-Bowl"><i class="glyphicon button-icon-left" data-position="left"></i>Back</button>
+						</div>
+						<div class="widget-container content-area horiz-area wrapping-col right"></div>
+					</div>
+					<div id="Bowlingsub" class="upage-content ">
+
+						<div class="grid grid-pad urow uib_row_8 row-height-8" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_10 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+
+									<div class="widget uib_w_54 scale-image d-margins" data-uib="media/img" data-ver="0">
+										<figure class="figure-align">
+											<img src="bowling.jpg">
+											<figcaption data-position="bottom"></figcaption>
+										</figure>
+									</div>
+
+									<span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+
+						<div class="grid grid-pad urow uib_row_13 row-height-13" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_19 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+									<div class="table-thing widget uib_w_55 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="0">
+										<label class="narrow-control"></label>
+										<textarea rows="3" class="wide-control form-control" placeholder="Placeholder">Must play an entire game of bowling backwards, game will be verified by friends. Entry with the most points wins.</textarea>
+									</div>
+									<button type="button" class="btn widget uib_w_56 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="bowling-subentry"><i class="glyphicon button-icon-left" data-position="left"></i>Submit Entry</button><span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+					</div>
+				</div>
+				<!-- /upage-outer -->
+				<div class="modal outer-element uib_w_57" data-uib="twitter%20bootstrap/modal" data-ver="0" id="bowling-popup" data-backdrop="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title">Backwards Bowling</h4>
+							</div>
+
+							<div class="modal-body">
+								<div class="col uib_col_11 single-col" data-uib="layout/col" data-ver="0">
+									<div class="widget-container content-area vertical-col">
+
+										<div class="table-thing widget uib_w_58 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+											<label class="narrow-control label-inline">Score</label>
+											<input class="wide-control form-control" type="text" placeholder="300">
+										</div>
+										<button type="button" class="btn widget uib_w_59 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="bowling-subentfin"><i class="glyphicon button-icon-left" data-position="left"></i>Submit Entry</button>
+										<span class="uib_shim"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="upage hidden" id="HotWings">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_27" data-uib="layout/header" data-ver="0">
@@ -230,6 +441,11 @@
 											<figcaption data-position="bottom"></figcaption>
 										</figure>
 									</div>
+									<div class="table-thing widget uib_w_47 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="0">
+										<label class="narrow-control label-inline"></label>
+										<textarea rows="5" class="wide-control form-control" placeholder="Placeholder">In order to complete this challenge, you must be filmed or have photos of you begining and after eating ten wings. The time should be taken by an outside observer.</textarea>
+									</div>
+									<button type="button" class="btn widget uib_w_48 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="entrysubmission"><i class="glyphicon button-icon-left" data-position="left"></i>Submit an Entry</button>
 									<span class="uib_shim"></span>
 								</div>
 							</div>
@@ -238,6 +454,35 @@
 					</div>
 				</div>
 				<!-- /upage-outer -->
+				<div class="modal outer-element uib_w_49" data-uib="twitter%20bootstrap/modal" data-ver="0" id="submipop" data-backdrop="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title">Submit an Entry</h4>
+							</div>
+
+							<div class="modal-body">
+								<div class="col uib_col_9 single-col" data-uib="layout/col" data-ver="0">
+									<div class="widget-container content-area vertical-col">
+
+										<div class="table-thing widget uib_w_50 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+											<label class="narrow-control label-inline">Time Taken:</label>
+											<input class="wide-control form-control" type="text" placeholder="0:00">
+										</div>
+										<button type="button" class="btn widget uib_w_51 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="uploadphoto"><i class="glyphicon button-icon-left" data-position="left"></i>Upload Photo</button>
+										<button type="button" class="btn widget uib_w_52 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="entrysubbuttonfin"><i class="glyphicon button-icon-left" data-position="left"></i>Submit Entry</button>
+										<span class="uib_shim"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer">
+								<button data-dismiss="modal" class="btn btn-default" type="button">close</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="upage hidden" id="listpage">
 				<div class="upage-outer">
@@ -263,10 +508,10 @@
 								<div class="widget-container content-area vertical-col">
 
 									<div class="list-group widget uib_w_23 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="0">
-										<a class="list-group-item allow-badge widget uib_w_24" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest Backwards Bowling Score</h4><p class="list-group-item-text">Davix</p></a>
-										<a class="list-group-item allow-badge widget uib_w_25" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest High Five</h4><p class="list-group-item-text">Shane </p></a>
+										<a class="list-group-item allow-badge widget uib_w_24" data-uib="twitter%20bootstrap/list_item" data-ver="0" id="HBBowlingScore"><h4 class="list-group-item-heading">Highest Backwards Bowling Score</h4><p class="list-group-item-text">Davix</p></a>
+										<a class="list-group-item allow-badge widget uib_w_25" data-uib="twitter%20bootstrap/list_item" data-ver="0" id="HHF-list "><h4 class="list-group-item-heading">Highest High Five</h4><p class="list-group-item-text">Shane </p></a>
 										<a class="list-group-item allow-badge widget uib_w_26" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Most People Seated On A Chair At Once</h4><p class="list-group-item-text">CoRE</p></a><a class="list-group-item allow-badge widget uib_w_36 d-margins"
-										data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Fast Completition of a 100-Piece Jigsaw Puzzle</h4><p class="list-group-item-text">Chaoren</p></a><a class="list-group-item allow-badge widget uib_w_37 d-margins"
+										data-uib="twitter%20bootstrap/list_item" data-ver="0" id="Jzpuz-list"><h4 class="list-group-item-heading">Fast Completition of a 100-Piece Jigsaw Puzzle</h4><p class="list-group-item-text">Chaoren</p></a><a class="list-group-item allow-badge widget uib_w_37 d-margins"
 										data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest "Flappy Bird" Score</h4><p class="list-group-item-text">Chaoren</p></a><a class="list-group-item allow-badge widget uib_w_38 d-margins" data-uib="twitter%20bootstrap/list_item"
 										data-ver="0"><h4 class="list-group-item-heading">Most Times Writting "CoRE" in 20 Seconds</h4><p class="list-group-item-text">Justin</p></a><a class="list-group-item allow-badge widget uib_w_39 d-margins" data-uib="twitter%20bootstrap/list_item"
 										data-ver="0"><h4 class="list-group-item-heading">Most People in a Selfie</h4><p class="list-group-item-text">Some Sorority</p></a>
