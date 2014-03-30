@@ -57,13 +57,15 @@
          /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
          See full API here: http://getbootstrap.com/javascript/#modals 
             */
-        //button to close pop
+           
+                                     alert("Cannot Create Challenge Demo Mode");
+                   //button to close pop
             //alert("User: "+(document.newchal.title.value));
             //alert("Pass: "+(document.newchal.disc.value));  
-            var tit = (document.newchal.title.value);
-            var disc = document.newchal.disc.value;            
-            loadDoc();
-            WriteToFile();
+          //  var tit = (document.newchal.title.value);
+        //    var disc = document.newchal.disc.value;            
+        //    loadDoc();
+        //    WriteToFile();
          $("#bs-modal-0").modal("toggle");  
         });
         $(".uib_w_30").click(function(evt)
