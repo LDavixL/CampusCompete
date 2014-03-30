@@ -54,12 +54,23 @@
         });
         $(".uib_w_34").click(function(evt)
         {
+<<<<<<< HEAD
          /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
          See full API here: http://getbootstrap.com/javascript/#modals 
             */
            
                                      alert("Cannot Create Challenge Demo Mode");
                    //button to close pop
+=======
+        alert("Cannot Create Challenge Demo Mode");
+        }
+        /*
+        $(".uib_w_34").click(function(evt)
+        {
+         // Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         // See full API here: http://getbootstrap.com/javascript/#modals 
+        //button to close pop
+>>>>>>> FETCH_HEAD
             //alert("User: "+(document.newchal.title.value));
             //alert("Pass: "+(document.newchal.disc.value));  
           //  var tit = (document.newchal.title.value);
@@ -68,6 +79,7 @@
         //    WriteToFile();
          $("#bs-modal-0").modal("toggle");  
         });
+        */
         $(".uib_w_30").click(function(evt)
         {
          /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
