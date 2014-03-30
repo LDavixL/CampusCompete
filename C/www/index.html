@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
-		<title>Your New Application</title>
+		<title>Campus Compete</title>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 		<style type="text/css">
@@ -146,16 +146,17 @@
 								<div class="widget-container content-area vertical-col left">
 
 									<form name="loginform" action="javascript:submit()" onsubmit="return submit()">
-										<div class="table-thing widget uib_w_2 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+										<div class="table-thing widget uib_w_2 d-margins text" data-uib="twitter%20bootstrap/input" data-ver="0">
 											<label class="narrow-control label-inline">Username:</label>
-											<input class="wide-control form-control" name="login" type="text" placeholder="JSmith">
+											<input class="wide-control form-control" name="login" type="text" placeholder="JSmith" value="admin">
 										</div>
-										<div class="table-thing widget uib_w_3 d-margins" data-uib="twitter%20bootstrap/input" data-ver="0">
+										<div class="table-thing widget uib_w_3 d-margins text1" data-uib="twitter%20bootstrap/input" data-ver="0">
 											<label class="narrow-control label-inline">Password:</label>
-											<input class="wide-control form-control" name="password" type="password" placeholder="**********">
+											<input class="wide-control form-control" name="password" type="password" placeholder="**********" value="pass">
 										</div>
 										<div class="btn-group uib-bs-flex widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="0">
-											<button type="button" class="btn widget uib_w_5 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon button-icon-left" data-position="left"></i>Log In</button>
+											<button type="button" class="btn widget uib_w_5 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0">Log In<i class="glyphicon"></i>
+											</button>
 
 											<button name="button" type="button" class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="0" id="signupfrontpage"><i class="glyphicon button-icon-left" data-position="left"></i>Sign Up</button>
 
@@ -206,7 +207,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="upage hidden" id="Puzzle">
+			<div class="upage hidden" id="About">
+				<div class="upage-outer">
+					<div id="Aboutsub" class="upage-content ">
+					</div>
+				</div>
+				<!-- /upage-outer -->
+			</div>
+			<div class="upage hidden bkg" id="Puzzle">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_67 uib-header-fixed descrip" data-uib="layout/header" data-ver="0" id="headpuz">
 						<h2>__  Fastest Puzzle Completion</h2>
@@ -220,7 +228,7 @@
 
 						<div class="grid grid-pad urow uib_row_11 row-height-11" data-uib="layout/row" data-ver="0">
 							<div class="col uib_col_17 col-0_12-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+								<div class="widget-container content-area wrapping-col left">
 
 									<div class="widget uib_w_71 scale-image d-margins" data-uib="media/img" data-ver="0">
 										<figure class="figure-align">
@@ -280,7 +288,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="upage hidden" id="HighestHighFive">
+			<div class="upage hidden bkg" id="HighestHighFive">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_60 uib-header-fixed" data-uib="layout/header" data-ver="0">
 						<h2>Highest High Five</h2>
@@ -294,7 +302,7 @@
 
 						<div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
 							<div class="col uib_col_13 col-0_12-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+								<div class="widget-container content-area center-h-v-col">
 
 									<div class="widget uib_w_64 d-margins heightscal skin margskin" data-uib="media/img" data-ver="0">
 										<figure class="figure-align">
@@ -356,7 +364,7 @@
 				</div>
 
 			</div>
-			<div class="upage hidden" id="Bowling">
+			<div class="upage hidden bkg" id="Bowling">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_53 uib-header-fixed" data-uib="layout/header" data-ver="0">
 						<h2>Backwards Bowling</h2>
@@ -370,7 +378,7 @@
 
 						<div class="grid grid-pad urow uib_row_8 row-height-8" data-uib="layout/row" data-ver="0">
 							<div class="col uib_col_10 col-0_12-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+								<div class="widget-container content-area wrapping-col left">
 
 									<div class="widget uib_w_54 scale-image d-margins" data-uib="media/img" data-ver="0">
 										<figure class="figure-align">
@@ -431,7 +439,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="upage hidden" id="HotWings">
+			<div class="upage hidden bkg" id="HotWings">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_27" data-uib="layout/header" data-ver="0">
 						<h2>Hot Wings</h2>
@@ -445,7 +453,7 @@
 
 						<div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
 							<div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+								<div class="widget-container content-area wrapping-col left">
 
 									<div class="widget uib_w_29 scale-image d-margins" data-uib="media/img" data-ver="0">
 										<figure class="figure-align">
@@ -508,7 +516,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="upage hidden" id="listpage">
+			<div class="upage hidden bkg" id="listpage">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_22" data-uib="layout/header" data-ver="0">
 						<h2>Challenge List</h2>
@@ -537,7 +545,7 @@
 										<a class="list-group-item allow-badge widget uib_w_26" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Most People Seated On A Chair At Once</h4><p class="list-group-item-text">CoRE</p></a><a class="list-group-item allow-badge widget uib_w_36 d-margins"
 										data-uib="twitter%20bootstrap/list_item" data-ver="0" id="Jzpuz-list"><h4 class="list-group-item-heading">Fast Completition of a 100-Piece Jigsaw Puzzle</h4><p class="list-group-item-text">Chaoren</p></a><a class="list-group-item allow-badge widget uib_w_37 d-margins"
 										data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Highest "Flappy Bird" Score</h4><p class="list-group-item-text">Chaoren</p></a><a class="list-group-item allow-badge widget uib_w_38 d-margins" data-uib="twitter%20bootstrap/list_item"
-										data-ver="0"><h4 class="list-group-item-heading">Most Times Writting "CoRE" in 20 Seconds</h4><p class="list-group-item-text">Justin</p></a><a class="list-group-item allow-badge widget uib_w_39 d-margins" data-uib="twitter%20bootstrap/list_item"
+										data-ver="0"><h4 class="list-group-item-heading">Most Times Writing "CoRE" in 20 Seconds</h4><p class="list-group-item-text">Justin</p></a><a class="list-group-item allow-badge widget uib_w_39 d-margins" data-uib="twitter%20bootstrap/list_item"
 										data-ver="0"><h4 class="list-group-item-heading">Most People in a Selfie</h4><p class="list-group-item-text">Some Sorority</p></a>
 										<a class="list-group-item allow-badge widget uib_w_40 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="0">
 											<h4 class="list-group-item-heading">Largest Deformed M&amp;M Piece</h4>
@@ -586,7 +594,7 @@
 				</div>
 			</div>
 
-			<div class="upage hidden" id="frontpage">
+			<div class="upage hidden bkg" id="frontpage">
 				<div class="upage-outer">
 					<div class="uib-header header-bg container-group inner-element uib_w_8" data-uib="layout/header" data-ver="0">
 						<h2>Campus Compete</h2>
@@ -602,7 +610,7 @@
 								<div class="widget-container content-area vertical-col">
 
 									<span class="widget uib_w_9 d-margins badge" data-uib="twitter%20bootstrap/badge_and_label" data-ver="0">Greetings</span>
-									<div class="list-group widget uib_w_10 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="0"><a class="list-group-item allow-badge widget uib_w_11" data-uib="twitter%20bootstrap/list_item" data-ver="0"><span class="badge glyphicon glyphicon-arrow-up"></span><h4 class="list-group-item-heading">Hot Wing Challenge</h4><p class="list-group-item-text">Eat 10 Hot Wings as Fast as Possible</p></a>
+									<div class="list-group widget uib_w_10 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="0"><a class="list-group-item allow-badge widget uib_w_11" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Hot Wing Challenge</h4><p class="list-group-item-text">Eat 10 Hot Wings as Fast as Possible</p></a>
 										<a class="list-group-item allow-badge widget uib_w_12" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Brain Run</h4><p class="list-group-item-text">Fastest Lap around the Brain</p></a>
 										<a class="list-group-item allow-badge widget uib_w_13" data-uib="twitter%20bootstrap/list_item" data-ver="0"><h4 class="list-group-item-heading">Center Court Baskets </h4><p class="list-group-item-text">Most Center Court Baskets in a Row</p></a>
 									</div>

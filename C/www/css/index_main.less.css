@@ -345,7 +345,7 @@ body:not(#afui) .upage-outer {
 }
 @media all and (min-width: 0px) {
   .row-height-1 > .col > .content-area {
-    min-height: 138px;
+    min-height: 126px;
   }
 }
 .align-widget {
@@ -624,10 +624,11 @@ label:empty {
 }
 @media all {
   .bg {
-    background-color: #a5ecd0;
+    background-image: url("http://media-cache-ak0.pinimg.com/736x/c5/ff/e2/c5ffe2cb6474a31deeb4e3234169b7a8.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100% auto;
   }
 }
 .uib_row_9:not(.cright) > .col {
@@ -796,4 +797,33 @@ label:empty {
 }
 .right-receptacle {
   float: right;
+}
+@media all {
+  .text > label {
+    font-size: 18px;
+    color: #000000;
+  }
+}
+@media all {
+  
+}
+@media all {
+  .text1 > label {
+    font-size: 18px;
+  }
+}
+@media all {
+  .back {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media all {
+  .bkg {
+    background-color: #d6d6d6;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
