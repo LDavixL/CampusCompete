@@ -6,34 +6,7 @@
  */
  function register_event_handlers()
  {
-        $(".uib_w_5").click(function(evt)
-        {
-            //Submit
-            var txtFile = new XMLHttpRequest();
-            var allText;
-            var lines;
-            
-            txtFile.open("GET", "https://raw.githubusercontent.com/LDavixL/CampusCompete/master/test.txt", true);
-            txtFile.onreadystatechange = function() {
-                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-                    if (txtFile.status === 200) {  // Makes sure it's found the file.
-                        allText = txtFile.responseText; 
-                        lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-                        var temp = "";
-                        var tog = false;
-                        lines.forEach(function(entry) {
-                                temp+=entry+ " ";
-                                tog = !tog;
-                                if(!tog){
-                                   // alert(temp);
-                                    temp = "";
-                                }
-                        });
-                    }
-                }
-            }
-            txtFile.send(null);
-        });
+        
         
         $(".uib_w_5").click(function(evt)
         {
@@ -54,32 +27,18 @@
         });
         $(".uib_w_34").click(function(evt)
         {
-<<<<<<< HEAD
          /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
          See full API here: http://getbootstrap.com/javascript/#modals 
             */
-           
-                                     alert("Cannot Create Challenge Demo Mode");
-                   //button to close pop
-=======
-        alert("Cannot Create Challenge Demo Mode");
-        }
-        /*
-        $(".uib_w_34").click(function(evt)
-        {
-         // Other options: .modal("show")  .modal("hide")  .modal("toggle")
-         // See full API here: http://getbootstrap.com/javascript/#modals 
         //button to close pop
->>>>>>> FETCH_HEAD
             //alert("User: "+(document.newchal.title.value));
             //alert("Pass: "+(document.newchal.disc.value));  
-          //  var tit = (document.newchal.title.value);
-        //    var disc = document.newchal.disc.value;            
-        //    loadDoc();
-        //    WriteToFile();
+            var tit = (document.newchal.title.value);
+            var disc = document.newchal.disc.value;            
+            loadDoc();
+            WriteToFile();
          $("#bs-modal-0").modal("toggle");  
         });
-        */
         $(".uib_w_30").click(function(evt)
         {
          /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
@@ -216,6 +175,10 @@
         $("#HHF-list ").click(function(evt)
         {
          activate_page("#HighestHighFive"); 
+        });
+        $("#loginbutton").click(function(evt)
+        {
+         activate_page("#frontpage"); 
         });
 }
  $(document).ready(register_event_handlers);
