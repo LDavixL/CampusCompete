@@ -25,7 +25,7 @@
                                 temp+=entry+ " ";
                                 tog = !tog;
                                 if(!tog){
-                                    alert(temp);
+                                   // alert(temp);
                                     temp = "";
                                 }
                         });
@@ -58,8 +58,8 @@
          See full API here: http://getbootstrap.com/javascript/#modals 
             */
         //button to close pop
-            alert("User: "+(document.newchal.title.value));
-            alert("Pass: "+(document.newchal.disc.value));  
+            //alert("User: "+(document.newchal.title.value));
+            //alert("Pass: "+(document.newchal.disc.value));  
             var tit = (document.newchal.title.value);
             var disc = document.newchal.disc.value;            
             loadDoc();
@@ -94,7 +94,7 @@
          See full API here: http://getbootstrap.com/javascript/#modals 
             */
         
-        // $("#popupsignup").modal("toggle");  
+         $("#popupsignup").modal("toggle");  
         });
         
         
@@ -109,17 +109,100 @@
         $("#submitsign").click(function(evt)
         {
         /* your code goes here */ 
-            saveuser();
-            $("#popupsignup").modal("toggle");  
+        });
+        $("#entrysubmission").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#submipop").modal("toggle");  
+        });
+        $("#uploadphoto").click(function(evt)
+        {
+        /* your code goes here */ 
+        });
+        $("#entrysubbuttonfin").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#submipop").modal("toggle");  
+        });
+        $("#bowling-subentfin").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#bowling-popup").modal("toggle");  
+        });
+        $("#bowling-subentry").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#bowling-popup").modal("toggle");  
+        });
+        $("#subenty").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#HHF-subpop").modal("toggle");  
+        });
+        $("#hhf-subentfin").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#HHF-subpop").modal("toggle");  
+        });
+        $("#timesubmit").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#Pz-popout").modal("toggle");  
+        });
+        $("#Pz -subentpre").click(function(evt)
+        {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#Pz-popout").modal("toggle");  
+        });
+        $("#HBBowlingScore").click(function(evt)
+        {
+         activate_page("#Bowling"); 
+        });
+        
+        $("#Jzpuz-list").click(function(evt)
+        {
+         activate_page("#Puzzle"); 
+        });
+        $("#Back-Bowl").click(function(evt)
+        {
+         activate_page("#listpage"); 
+        });
+        $("#Back-HHF").click(function(evt)
+        {
+         activate_page("#listpage"); 
+        });
+        $("#backpuz").click(function(evt)
+        {
+         activate_page("#listpage"); 
+        });
+        $("#HHF-list ").click(function(evt)
+        {
+         activate_page("#HighestHighFive"); 
         });
 }
  $(document).ready(register_event_handlers);
 })();
-
-function saveuser(){
-                var username = document.savemem.possuser.value;
-                var password = document.savemem.posspass.value;
-                
-                 var myRequest = new Request({method: 'get', url: 'saveuser.php'});
-                 myRequest.send('user=' + username + 'password=' + password);
-			};

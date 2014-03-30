@@ -1,2 +1,1 @@
-User: J
-Pass: B
+User: J Pass: B
