@@ -25,7 +25,7 @@
                                 temp+=entry+ " ";
                                 tog = !tog;
                                 if(!tog){
-                                    alert(temp);
+                                   // alert(temp);
                                     temp = "";
                                 }
                         });
@@ -58,8 +58,8 @@
          See full API here: http://getbootstrap.com/javascript/#modals 
             */
         //button to close pop
-            alert("User: "+(document.newchal.title.value));
-            alert("Pass: "+(document.newchal.disc.value));  
+            //alert("User: "+(document.newchal.title.value));
+            //alert("Pass: "+(document.newchal.disc.value));  
             var tit = (document.newchal.title.value);
             var disc = document.newchal.disc.value;            
             loadDoc();
